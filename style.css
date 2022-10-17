@@ -1,0 +1,119 @@
+:root {
+  --Cyan: hsl(128, 74%, 38%);
+  --Bright-Yellow: hsl(3, 72%, 41%);
+  --Light-Gray: hsl(207, 23%, 92%);
+  --Grayish-Blue: hsl(217, 90%, 47%);
+}
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Red+Hat+Display:ital,wght@0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--Light-Gray);
+}
+.main-container {
+  display: flex;
+}
+.card-container {
+  margin: 1.5rem;
+  border-radius: 15px;
+
+  overflow: hidden;
+}
+.community-section {
+  background-color: rgb(254, 254, 254);
+  padding: 1.5rem;
+}
+.join-community {
+  padding-bottom: 1.5rem;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: var(--Cyan);
+}
+.title-description {
+  padding-bottom: 1.5rem;
+  font-weight: 400;
+  color: var(--Bright-Yellow);
+}
+.community-para {
+  text-align: justify;
+  line-height: 25px;
+  color: var(--Light-Gray);
+}
+
+/* Monthly Subscription  */
+.subscription-section {
+  padding: 1.5rem;
+  color: rgb(254, 254, 254);
+  background-color: var(--Cyan);
+}
+.text {
+  font-weight: 400;
+  font-size: 1.5em;
+  padding-bottom: 1.5rem;
+}
+.price-container {
+  display: flex;
+}
+.per-month {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+.subs-para {
+  padding: 1.5rem;
+  padding-top: 1.5rem;
+}
+button {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 1.5rem;
+  background-color: var(--Bright-Yellow);
+  width: 100%;
+  color: white;
+  box-shadow: -2px 25px 22px -9px rgba(0, 0, 0, 0.2);
+}
+.infor-container {
+  padding: 1.5rem;
+  background-color: rgb(116, 191, 41);
+}
+.why-us {
+  padding: 1.5rem;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.list-item {
+  list-style: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: white;
+}
+
+/* Media Query */
+@media (min-width: 38em) {
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .community-section {
+    width: 40em;
+  }
+  .flex-container {
+    display: flex;
+  }
+  .subscription-section {
+    width: 20em;
+  }
+  .infor-container {
+    width: 20em;
+  }
+}
